@@ -28,7 +28,6 @@ p:first-child {
     .p{
         color: black;
         padding: 0 67px;
-        font-family: 'Roboto', sans-serif;
         font-size: 2vw;
         text-align: left;
     }
