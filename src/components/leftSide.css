@@ -6,7 +6,7 @@ body {
 .leftSideStyle {
     width: 50%;
     height: 100vh;
-    background-image: -webkit-linear-gradient(29deg, rgb(32, 107, 248) 50%, #004E95 50%);
+    background-image: -webkit-linear-gradient(29deg, #2185d0 50%, #004E95 50%);
     display: flex;
     justify-content: center;
     align-items: center;
