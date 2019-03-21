@@ -5,7 +5,7 @@ class Login extends Component {
   render() {
     return (
       <div className="loginStyle tabletDisplay desktopDisplay">
-        <div className="tabletDisplay2 desktopDisplay2">
+        <div className="tabletDisplay2 desktopDisplay2 mobileDisplay">
           <div>
               <label htmlFor="userName"/>
               <input id="userName" placeholder="user name"></input>
@@ -15,7 +15,7 @@ class Login extends Component {
               <input id="userPass" placeholder="password"></input>
           </div>
         </div>
-        <button className="ui primary button tabletButtonDisplay">Log In</button>
+        <button className="ui primary button tabletButtonDisplay mobileButtonDisplay">Log In</button>
       </div>
     );
   }
