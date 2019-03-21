@@ -1,0 +1,19 @@
+.primaryButton {
+    background: rgb(32, 107, 248);
+    color: #fff;
+    height: 34px;
+    font-size: 15px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: inherit;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.registerStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 87vh;
+    flex-direction: column;
+}

@@ -1,0 +1,36 @@
+.rigthSideStyle {
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 87vh;
+    flex-direction: column;
+}
+
+
+.p{
+    color: black;
+    padding: 0 67px;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.rightSideMargin {
+    width: 50%;
+}
+
+p:first-child {
+    margin-top: -48px;
+}
+
+@media (max-width:1023px) {
+    .p{
+        color: black;
+        padding: 0 67px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2vw;
+        text-align: left;
+    }
+}
+

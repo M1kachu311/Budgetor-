@@ -1,0 +1,65 @@
+/* .desktopDisplay {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+} */
+
+.loginStyle {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+input {
+    width: 10rem;
+    height: 34px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: grey solid 1px;
+    font-weight: inherit;
+    color: darkgray;
+    padding-left: 10px;
+    margin: 10px;
+}
+
+/* input {
+    width: 140px;
+    height: 34px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: grey solid 1px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: inherit;
+    color: darkgray;
+    padding-left: 10px;
+    margin: 10px;
+} */
+
+.loginStyle button{
+    height:34px;
+}
+
+.desktopDisplay2 {
+    display: flex;
+}
+
+@media (max-width: 1023px) {
+    .tabletDisplay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabletDisplay2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .tabletButtonDisplay {
+        width: 300px;
+    }
+}
+
+
