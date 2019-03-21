@@ -10,3 +10,8 @@
 .MuiAppBar-colorPrimary-8 {
     background: #2185d0 !important;
 }
+
+.MuiButton-root-39:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
