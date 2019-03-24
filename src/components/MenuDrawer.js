@@ -13,7 +13,6 @@ import MailIcon from '@material-ui/icons/Mail';
 import SettingIcon from '@material-ui/icons/Mail';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import './menuDrawer.css';
 
 const styles = {
   list: {
@@ -22,6 +21,18 @@ const styles = {
   fullList: {
     width: 'auto',
   },
+  drawerIcon: {
+    color: '#fff',
+  },
+  drawerButton: {
+    '&:hover': {
+      backgroundColor: '#2185d0',
+    },
+  },
+  drawerIconStyle: {
+    display: 'flex',
+    justifyContent: 'flex-start',
+  }
 };
 
 class MenuDrawer extends React.Component {
@@ -61,10 +72,10 @@ class MenuDrawer extends React.Component {
     );
 
     return (
-      <div className="drawerIconStyle">
-        <Button onClick={this.toggleDrawer('left', true)}>
+      <div className={classes.drawerIconStyle}>
+        <Button className={classes.drawerButton} onClick={this.toggleDrawer('left', true)}>
           <IconButton 
-            className="IconStyle"
+            className={classes.drawerIcon}
             // color="inherit"
             aria-label="Open drawer"
             onClick={this.handleDrawerOpen}
