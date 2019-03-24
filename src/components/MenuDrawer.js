@@ -8,11 +8,14 @@ import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
-import SettingIcon from '@material-ui/icons/Mail';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import Home from '@material-ui/icons/Home';
+import Category from '@material-ui/icons/Category';
+import AttachMoney from '@material-ui/icons/AttachMoney';
+import AccountCircle from '@material-ui/icons/AccountCircle';
+import Delete from '@material-ui/icons/Delete';
+import Settings from '@material-ui/icons/Settings';
 
 const styles = {
   list: {
@@ -52,10 +55,16 @@ class MenuDrawer extends React.Component {
     const sideList = (
       <div className={classes.list}>
         <List>
-          {['Home', 'Categories', 'Monthly budget', 'My account'].map((text, index) => (
+          {['Home', 'Categories'].map((text, index) => (
             <ListItem button key={text}>
-              {/* <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <SettingIcon />}</ListItemIcon> */}
+              <ListItemIcon>{index % 2 === 0 ? <Home /> : <Category />}</ListItemIcon>
               <ListItemText primary={text} />
+            </ListItem>
+          ))}
+          {['Monthly budget', 'My account'].map((text2, index) => (
+            <ListItem button key={text2}>
+              <ListItemIcon>{index % 2 === 0 ? <AttachMoney /> : <AccountCircle />}</ListItemIcon>
+              <ListItemText primary={text2} />
             </ListItem>
           ))}
         </List>
@@ -63,7 +72,7 @@ class MenuDrawer extends React.Component {
         <List>
           {['Trash', 'Settings'].map((text, index) => (
             <ListItem button key={text}>
-              {/* <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <SettingIcon />}</ListItemIcon> */}
+              <ListItemIcon>{index % 2 === 0 ? <Delete /> : <Settings />}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
           ))}
