@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './modalButton.css';
+import './styles/modalButton.css';
 import LoginPopup from './LoginPopup';
 
 export class ModalButton extends Component {

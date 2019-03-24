@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './loginPopup.css'
+import './styles/loginPopup.css'
 
 class LoginPopup extends Component {
   render() {

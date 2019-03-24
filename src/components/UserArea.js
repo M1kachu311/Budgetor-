@@ -1,16 +1,17 @@
-import React, { Component } from 'react';
-import './userArea.css';
-import Search from './Search';
-import Header from './Header';
-import Footer from './Footer';
+import React, { Component, Fragment } from 'react';
+import './styles/userArea.css';
+import Header from './layout/Header';
+import Footer from './layout/Footer';
+import Main from './layout/Main';
 
 class UserArea extends Component {
   render() {
     return (
-        <div>
+        <Fragment>
             <Header />
+            <Main />
             <Footer />
-        </div>
+        </Fragment>
     );
   }
 }

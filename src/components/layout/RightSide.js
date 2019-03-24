@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './rightSide.css';
-import Login from './Login';
-import ModalButton from './ModalButton';
+import './../styles/rightSide.css';
+import Login from './../Login';
+import ModalButton from './../ModalButton';
 
 
 class RightSide extends Component {

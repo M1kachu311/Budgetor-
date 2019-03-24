@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import LeftSide from './components/LeftSide';
-import RightSide from './components/RightSide';
+import React, { Component, Fragment } from 'react';
+import LeftSide from './components/layout/LeftSide';
+import RightSide from './components/layout/RightSide';
 import UserArea from './components/UserArea'
 import './App.css';
 
@@ -16,9 +16,7 @@ class App extends Component {
       );
     } else if (this.state.logedIn === true) {
       return (
-        <div className="App">
           <UserArea />
-        </div>
       ); 
     }
   }
