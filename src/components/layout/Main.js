@@ -23,7 +23,7 @@ export class Main extends Component {
     const { classes } = this.props;
     return (
         <div className="mainStyle">
-            <Button 
+            <Button //this button is here temporarly, will be removed/used differently
                 variant="contained" 
                 className={classes.button} //here we reffer to our object of css rules
             >
