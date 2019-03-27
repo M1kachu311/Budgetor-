@@ -5,7 +5,7 @@ import UserArea from './components/UserArea'
 import './App.css';
 
 class App extends Component {
-  state = { logedIn: true}; 
+  state = { logedIn: false}; 
   render() {
     if(this.state.logedIn === false) {
       return (
