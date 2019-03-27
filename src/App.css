@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   display: flex;
+  justify-content: flex-end;
 }
 
 @media (max-width:767px) {
