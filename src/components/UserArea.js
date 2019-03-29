@@ -3,16 +3,28 @@ import './styles/userArea.css';
 import Header from './layout/Header';
 import Footer from './layout/Footer';
 import Main from './layout/Main';
+import { withStyles } from '@material-ui/core/styles';
+
+const styles = {
+    userArea: {
+        display: 'flex',
+        flexDirection: 'column',
+    },
+};
+
 
 class UserArea extends Component {
   render() {
+
+    const { classes } = this.props;
+
     return (
-        <Fragment>
+        <div className={classes.userArea}>
             <Header />
             <Main />
             <Footer />
-        </Fragment>
+        </div>
     );
   }
 }
-export default UserArea;
+export default withStyles(styles)(UserArea);
