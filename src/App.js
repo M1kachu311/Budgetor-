@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import LeftSide from './components/layout/LeftSide';
 import RightSide from './components/layout/RightSide';
 import UserArea from './components/UserArea'

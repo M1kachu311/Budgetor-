@@ -15,7 +15,7 @@ import Category from '@material-ui/icons/Category';
 import AttachMoney from '@material-ui/icons/AttachMoney';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import Delete from '@material-ui/icons/Delete';
-import Settings from '@material-ui/icons/Settings';
+import Settings from '@material-ui/icons/Settings'; // in order to use those icons you need to install that npm package in your project: npm install @material-ui/icons
 
 const styles = {
   list: {
@@ -40,7 +40,7 @@ const styles = {
 
 class MenuDrawer extends React.Component {
   state = {
-    top: false,
+    left: false,
   };
 
   toggleDrawer = (side, open) => () => {
@@ -85,9 +85,7 @@ class MenuDrawer extends React.Component {
         <Button className={classes.drawerButton} onClick={this.toggleDrawer('left', true)}>
           <IconButton 
             className={classes.drawerIcon}
-            // color="inherit"
             aria-label="Open drawer"
-            onClick={this.handleDrawerOpen}
           >
           <MenuIcon />
           </IconButton>
