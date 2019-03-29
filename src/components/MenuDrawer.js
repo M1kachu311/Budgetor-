@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
-import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
@@ -82,14 +81,14 @@ class MenuDrawer extends React.Component {
 
     return (
       <div className={classes.drawerIconStyle}>
-        <Button className={classes.drawerButton} onClick={this.toggleDrawer('left', true)}>
+        <div className={classes.drawerButton} onClick={this.toggleDrawer('left', true)}>
           <IconButton 
             className={classes.drawerIcon}
             aria-label="Open drawer"
           >
           <MenuIcon />
           </IconButton>
-        </Button>
+        </div>
         <Drawer open={this.state.left} onClose={this.toggleDrawer('left', false)}>
           <div
             tabIndex={0}

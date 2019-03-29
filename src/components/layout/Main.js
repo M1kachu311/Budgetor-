@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import './../styles/main.css';
 import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
-import SimpleSelect from '../SelectMonth';
 
 // the best way to have classes to a component is by using an object of css rules
 const styles = {
