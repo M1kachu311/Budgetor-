@@ -3,7 +3,8 @@ import React, { Component } from 'react'
 // import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 import RecipeReviewCard from './../Card';
-import FullWidthTabs from './../BudgetTable';
+import MuiVirtualizedTable from './../BudgetTable';
+import CustomizedTable from './../ProductList';
 
 
 // the best way to have classes to a component is by using an object of css rules
@@ -21,7 +22,7 @@ const styles = {
     },
     main: {
         width: '100%',
-        height: '80vh',
+        height: 'auto',
         display: 'flex',
         justifyContent: 'center',
     },
@@ -33,7 +34,8 @@ export class Main extends Component {
     return (
         <div className={classes.main}>
             <RecipeReviewCard title="February's Budget">
-                <FullWidthTabs />
+                {/* <MuiVirtualizedTable /> not in use for now */}
+                <CustomizedTable /> 
             </RecipeReviewCard>
             <RecipeReviewCard title="Statistics For February"/>
             {/* <Button //this button is here temporarly, will be removed/used differently
