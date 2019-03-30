@@ -39,7 +39,8 @@ const styles = theme => ({
     backgroundColor: red[500],
   },
   cardContentStyle: {
-    padding: 0,
+    padding: '0px',
+    paddingBottom: '0px !important',
   }
 });
 
